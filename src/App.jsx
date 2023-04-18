@@ -1,5 +1,5 @@
 import './App.css';
-import logo from '../../distribuidoradeloeste/src/imagenes/logo.png';
+import logo from './imagenes/logo.png';
 
 import NavBar from './components/NavBar/NavBar';
 import CartWidget from './components/CartWidget/CartWidget';

@@ -1,23 +1,15 @@
 .navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: black;
-  color: white;
 }
 
 .nav_items {
   font-size: 20px;
   color: yellow;
   text-decoration: none;
-  display: inline-block;
-}
-
-.nav_logo {
-  font-weight: bold;
-  font-size: 20px;
-  margin: 15px;
-  color: white;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
 
@@ -33,11 +25,13 @@
 .iconoCarrito {
   height: 60px;
   width: 40px;
-  margin: 15px;
-
+  margin-right: 42px;
+  margin-bottom: 5px;
 }
 
 
 .text-prop {
   text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
 }
