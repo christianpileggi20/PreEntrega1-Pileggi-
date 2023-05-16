@@ -32,11 +32,11 @@ const ItemListContainer = () => {
           pictureUrl: "https://d22fxaf9t8d39k.cloudfront.net/15f05ea900edf5d10aafad2e49f0070534328afe451eacd1d73307b80d95df0568416.jpeg"}
       ]; 
 
-    const getProducts = () => {
-      return new Promise((resolve) => {
-        setTimeout(() => resolve(listaProductos), 2000);
-      });
-    };
+      const getProducts = () => {
+        return new Promise((resolve) => {
+          setTimeout(() => resolve(arrayProductos), 2000);
+        });
+      };
   
     const [listaProductos, setListaProductos] = useState([]);
     useEffect(() => {
@@ -47,9 +47,9 @@ const ItemListContainer = () => {
   
     return (
       <div>
-        {listaProductos.map((producto) => (
-          <ItemList key={producto.id} producto={producto} />
-        ))}
+        
+          <ItemList listaProductos={listaProductos} />
+        
       </div>
     );
   };
