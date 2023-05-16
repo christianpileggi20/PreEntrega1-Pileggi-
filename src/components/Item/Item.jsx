@@ -1,9 +1,9 @@
-const Item = ({ producto }) => {
-    const { id, img, name, description, price, stock} = producto;
+const Item = ({ id, img, name, description, stock, price }) => {
+    
   
     return (
-      <div style={{ width: '20rem', margin: '.5rem' }}>
-        <img src={img} alt={name} />
+      <div>
+        <img src={img} />
         <div>
           <p>{name}</p>
           <p>{description}</p>
@@ -11,10 +11,11 @@ const Item = ({ producto }) => {
           <p>stock: {stock}</p>
           <p>{id}</p>
           
+          
         
         </div>
   
-        <button>Ver más</button>
+        <button>Ver detalles</button>
       </div>
     );
   };

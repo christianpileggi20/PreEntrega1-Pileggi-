@@ -13,7 +13,6 @@ const ItemList = ({ listaProductos }) => {
             stock={producto.stock}
             description={producto.description}
             price={producto.price}
-            title={producto.title}
             id={producto.id}
           />
         );
