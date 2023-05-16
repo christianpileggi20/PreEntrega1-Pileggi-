@@ -7,9 +7,9 @@ const NavBar =() => {
     return (
         <div className="navbar">
             <Link to={"/"}>Inicio</Link>
-            <Link to={"/category/1"}>Productos</Link>
-            <Link to={"/category/2"}>Preguntas frecuentes</Link>
-            <Link to={"/category/3"}>Contacto</Link>
+            <Link to={"/category/productos"}>Productos</Link>
+            <Link to={"/category/preguntasfrecuentes"}>Preguntas frecuentes</Link>
+            <Link to={"/category/contacto"}>Contacto</Link>
             <img src={logo} alt="Logo de la empresa" />
            <CartWidget /> 
         </div>

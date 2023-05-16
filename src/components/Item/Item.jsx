@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Item = ({ id, img, name, description, stock, price }) => {
     
   
@@ -15,7 +17,7 @@ const Item = ({ id, img, name, description, stock, price }) => {
         
         </div>
   
-        <button>Ver detalles</button>
+        <Link to={`/item/${id}`}>Ver detalles </Link>
       </div>
     );
   };

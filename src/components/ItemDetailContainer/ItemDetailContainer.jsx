@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
             .catch(error => {
                 console.error(error)
             })
-    },   []);
+    },   [ItemId]);
 
 
     return (
