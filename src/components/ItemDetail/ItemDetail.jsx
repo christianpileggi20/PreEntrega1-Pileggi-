@@ -1,21 +1,18 @@
-const ItemDetail = (props) => {
-    const {imgurl, name, descripcion} = props;
-
+const ItemDetail = ({ img, description, stock, price }) => {
     return (
-        <>
+      <>
         <div>
-        <img src={imgurl} width={100} height={100} />
+          <h1>detalle del item</h1>
+          <div>
+            <img src={img} />
+          </div>
+          <div>
+            <p>{description}</p>
+          </div>
+          <div>{price}</div> 
         </div>
-        <div>
-        <p>{name}</p>
-        <p>{descripcion}</p>            
-        </div>
-
-    </>
-    )
-     
-};
-
-
-
-export default ItemDetail;
+      </>
+    );
+  };
+  
+  export default ItemDetail;

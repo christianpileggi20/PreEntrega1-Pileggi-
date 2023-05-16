@@ -1,7 +1,6 @@
 import { Item } from "../Item";
 
-export const ItemList = ({ listaProductos }) => {
-  console.log(listaProductos);
+const ItemList = ({ listaProductos }) => {
   return (
     <div className="item-list">
       {listaProductos.map((producto) => {
