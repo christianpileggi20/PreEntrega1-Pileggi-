@@ -1,10 +1,23 @@
 import React from 'react';
+import { initializeApp } from "firebase/app";
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import { CartContextProvider } from './components/Context/CartContext';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAa6YbOZA1ht64ommOnQuSMkslTYmE2TYk",
+  authDomain: "tejidosartesanalessys.firebaseapp.com",
+  projectId: "tejidosartesanalessys",
+  storageBucket: "tejidosartesanalessys.appspot.com",
+  messagingSenderId: "349548944942",
+  appId: "1:349548944942:web:ad81e7c670a97325db09bf",
+  measurementId: "G-BMPZ97P00K"
+};
+
+initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
