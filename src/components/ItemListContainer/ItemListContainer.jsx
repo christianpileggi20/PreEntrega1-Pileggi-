@@ -2,6 +2,7 @@
 import ItemList from "../ItemList/ItemList";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 const arrayProductos = () => [
   { id: 1,
@@ -39,6 +40,7 @@ const getProducts = () => {
 
 const ItemListContainer = () => {
   const [listaProductos, setListaProductos] = useState([]);
+
 
 
   useEffect(() => {
